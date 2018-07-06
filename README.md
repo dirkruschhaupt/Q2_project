@@ -4,6 +4,4 @@ A site that is basically a friend tracker. I always forget personal info of frie
 
 Click link for mock ups
 
-![mock up](https://github.com/dirkruschhaupt/Q2_project/blob/master/Friend%20Ranker.pdf)
-
 ![mock up](/Friend%20Ranker.pdf)
