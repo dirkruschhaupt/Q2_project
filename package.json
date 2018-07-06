@@ -1,0 +1,24 @@
+{
+  "name": "Q2_project",
+  "version": "1.0.0",
+  "description": "Q2 project 2018",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dirkruschhaupt/Q2_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dirkruschhaupt/Q2_project/issues"
+  },
+  "homepage": "https://github.com/dirkruschhaupt/Q2_project#readme",
+  "dependencies": {
+    "knex": "^0.15.0",
+    "pg": "^7.4.3"
+  }
+}
