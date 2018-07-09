@@ -18,6 +18,10 @@ header {
  padding: 10px 10px;
 }
 
+.about {
+  margin: 10%;
+}
+
 .header a {
   float: left;
   color: white;
@@ -46,4 +50,19 @@ header {
 
 .selector-for-some-widget {
   box-sizing: content-box;
+}
+
+footer {
+  position: fixed;
+  border-top: 3px solid black;
+  background-color: royalblue;
+  background: linear-gradient(to bottom, royalblue 0%, darkblue 100%);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: left;
+  padding: 8px 50px 8px;
+  font-size: 12px;
+  margin-top: 20px;
 }

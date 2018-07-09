@@ -1,8 +1,8 @@
 //makes groups table
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('groups', function(table) {
-    table.increments();
-    table.string('group_name');
+    table.integer('friends_id').references('friends.id').onDelete('CASCADE');
+    table.string('groups_name');
   })
 };
 

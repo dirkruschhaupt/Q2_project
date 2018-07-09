@@ -35,6 +35,8 @@ router.post('/friends', function(req,res) {
     .insert({
       name: req.body.name,
       address: req.body.address,
+      city: req.body.city,
+      state: reg.body.state,
       phone: req.body.phone,
       email: req.body.email,
       birthday: req.body.birthday,
@@ -66,6 +68,8 @@ router.patch('/friends/:id', function(req,res) {
       .update({
         name: req.body.name,
         address: req.body.address,
+        city: reg.body.city
+        state: reg.body.state,
         phone: req.body.phone,
         email: req.body.email,
         birthday: req.body.birthday,

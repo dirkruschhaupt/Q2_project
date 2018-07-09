@@ -1,16 +1,17 @@
 //makes friend table
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable('friend', function(table) {
+  return knex.schema.createTable('friends', function(table) {
     table.increments();
     table.string('name');
     table.string('address');
+    table.string('city');
+    table.string('state');
     table.integer('phone');
     table.string('email');
-    table.integer('birthday');
+    table.string('birthday');
     table.string('sex');
     table.integer('rank');
-    table.string('relation');
-    table.integer('date');
+    table.string('date');
     table.string('place');
     table.string('note');
     table.string('photo');
@@ -18,5 +19,5 @@ exports.up = function(knex, Promise) {
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTable('friend');
+  return knex.schema.dropTable('friends');
 };
