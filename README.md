@@ -6,4 +6,4 @@ User will be able to login and view friends they have entered and view data on i
 
 Click link for mock ups
 
-![mock up](/Friend%20Ranker.pdf)
+![mock up](/images/Friend%20Ranker.pdf)

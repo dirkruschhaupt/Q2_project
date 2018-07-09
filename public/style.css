@@ -4,9 +4,46 @@
 }
 
 body {
-  background-color: #f4f4f4;
-  color: #555555;
+  background-color: red;
+  background: linear-gradient(to right, #ff0000 10%, #ff4d4d 50%);
+  background-size: 100% 100%;
   font: normal 15px Arial, Helvetica, sans-serif;
   line-height: 1.6em;
   margin: 0;
+}
+
+header {
+ overflow: hidden;
+ background-color: royalblue;
+ padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
 }
