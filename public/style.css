@@ -5,7 +5,7 @@
 
 body {
   background-color: red;
-  background: linear-gradient(to right, #ff0000 10%, #ff4d4d 50%);
+  background: linear-gradient(to right, gray 10%, lightgray 50%);
   background-size: 100% 100%;
   font: normal 15px Arial, Helvetica, sans-serif;
   line-height: 1.6em;
@@ -15,7 +15,9 @@ body {
 header {
  overflow: hidden;
  background-color: royalblue;
+ background: linear-gradient(to top, royalblue 0%, darkblue 100%);
  padding: 10px 10px;
+ border-bottom: 3px solid black;
 }
 
 .about {
@@ -50,6 +52,34 @@ header {
 
 .selector-for-some-widget {
   box-sizing: content-box;
+}
+
+.feed {
+  margin-left: 7%;
+  margin-right: 7%;
+  line-height: 1.6em;
+}
+
+.a {
+  width: 20%;
+}
+.b {
+  width: 35%;
+}
+.c {
+  width: 45%;
+}
+
+p {
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  margin: 3%;
+}
+
+h3 {
+  margin-left: 6%;
 }
 
 footer {

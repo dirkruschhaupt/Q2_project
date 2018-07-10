@@ -1,12 +1,12 @@
 //makes friend table
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('friends', function(table) {
-    table.increments();
+    table.increments('id');
     table.string('name');
     table.string('address');
     table.string('city');
     table.string('state');
-    table.integer('phone');
+    table.string('phone');
     table.string('email');
     table.string('birthday');
     table.string('sex');
