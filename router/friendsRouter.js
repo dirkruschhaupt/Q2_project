@@ -4,7 +4,7 @@ let express = require('express');
 let router = express.Router();
 let knex = require('../knex');
 
-router.get('/friends', function(req,res) {
+router.get('/friends', function(req, res, next) {
   knex('friends')
     .orderBy('id')
     .then((friends) => {
@@ -68,7 +68,7 @@ router.patch('/friends/:id', function(req,res) {
       .update({
         name: req.body.name,
         address: req.body.address,
-        city: reg.body.city
+        city: reg.body.city,
         state: reg.body.state,
         phone: req.body.phone,
         email: req.body.email,

@@ -23,6 +23,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('short'));
 
+console.log('hello');
+
 app.use(friendsRouter);
 app.use(groupsRouter);
 
@@ -36,6 +38,7 @@ app.use((err, req, res, next) => {
       .status(err.status)
       .set('Content-Type', 'text/plain')
       .send(err.message);
+      console.log('hello');
   }
 
   console.error(err.stack);

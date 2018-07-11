@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <% include headerfooter/header %>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script defer src="index.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <title>Friend Ranker</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <a class="logo" href="/public/index.html">Friend Ranker</a>
+      <div class="header-right">
+        <a href="/public/about.html">About</a>
+      </div>
+    </header>
+
+    <% for (let i = 0; i < data.length; i++) { %>
+          <div class="column">
+            <div class="a">
+              <a>Rank: <%= data[i].rank%></a>
+              <!-- <img src= <%= data[i].photo%> > -->
+            </div>
+          <div class="b">
+            <a><%= data[i].name%></a>
+            <a><%= data[i].address%></a>
+            <a><%= data[i].city%>, <%= data[i].state%></a>
+            <a>Phone: <%= data[i].phone%></a>
+            <a>Email: <%= data[i].email%></a>
+            <a>Birthday: <%= data[i].birthday%></a>
+            <a>Gender: <%= data[i].sex%></a>
+          </div>
+          <div class="c">
+            <a>Date Met: <%= data[i].date%></a>
+            <a>Place Met: <%= data[i].place%></a>
+            <a>Notes: <%= data[i].note%></a>
+          </div>
+
+          <hr>
+        </div>
+
+          <% } %>
+
+    <footer>
+      <% include headerfooter/footer %>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/public/style.css">
+  </body>
+</html>
+
+<% include headerfooter/footer %>
