@@ -56,7 +56,7 @@ router.post('/friends', function(req,res) {
     });
   });
 
-router.patch('/friends/:id', function(req,res) {
+router.patch('/edit/:id', function(req,res) {
   knex('friends')
     .where('id', req.params.id)
     .first()

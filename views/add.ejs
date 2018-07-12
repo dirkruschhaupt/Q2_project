@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <% include headerfooter/header %>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,21 +9,146 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <title>Friend Ranker</title>
+    <title>Friend Ranker: Add</title>
   </head>
   <body>
 
-    <header class="header">
-      <a class="logo" href="index.html">Friend Ranker</a>
-      <div class="header-right">
-        <a href="about.html">About</a>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <section class="form-group col-md-6">
+          <label for="rank">Rank:</label>
+          <input type="text" class="form-control" placeholder="1-10" name="rank">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="photo">Photo URL:</label>
+          <input type="text" class="form-control" placeholder="Photo URL" name="photo">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" placeholder="Full Name" name="name">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="address">Street Address:</label>
+          <input type="text" class="form-control" placeholder="Address" name="address">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="city">City:</label>
+          <input type="text" class="form-control" placeholder="City" name="city">
+        </section>
+
+        <section class="form-group col-md-6">
+          <label for="state">State:</label>
+          <div class="input-group mb-3">
+            <select class="custom-select" id="inputGroupSelect02">
+              <option selected>State</option>
+              <option value="1">AL</option>
+              <option value="2">AK</option>
+              <option value="3">AZ</option>
+              <option value="4">AR</option>
+              <option value="5">CA</option>
+              <option value="6">CO</option>
+              <option value="7">CT</option>
+              <option value="8">DE</option>
+              <option value="9">FL</option>
+              <option value="10">GA</option>
+              <option value="11">HI</option>
+              <option value="12">ID</option>
+              <option value="13">IL</option>
+              <option value="14">IN</option>
+              <option value="15">IA</option>
+              <option value="16">KS</option>
+              <option value="17">KY</option>
+              <option value="18">LA</option>
+              <option value="19">ME</option>
+              <option value="20">MD</option>
+              <option value="21">MA</option>
+              <option value="22">MI</option>
+              <option value="23">MN</option>
+              <option value="24">MS</option>
+              <option value="25">MO</option>
+              <option value="26">MT</option>
+              <option value="27">NE</option>
+              <option value="28">NV</option>
+              <option value="29">NH</option>
+              <option value="30">NJ</option>
+              <option value="31">NM</option>
+              <option value="32">NY</option>
+              <option value="33">NC</option>
+              <option value="34">ND</option>
+              <option value="35">OH</option>
+              <option value="36">OK</option>
+              <option value="37">OR</option>
+              <option value="38">PA</option>
+              <option value="39">RI</option>
+              <option value="40">SC</option>
+              <option value="41">SD</option>
+              <option value="42">TN</option>
+              <option value="43">TX</option>
+              <option value="44">UT</option>
+              <option value="45">VT</option>
+              <option value="46">VA</option>
+              <option value="47">WA</option>
+              <option value="48">WV</option>
+              <option value="49">WI</option>
+              <option value="50">WY</option>
+            </select>
+            <div class="input-group-append">
+              <label class="input-group-text" for="inputGroupSelect02">Options</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-group col-md-6">
+          <label for="phone">Phone Number:</label>
+          <input type="text" class="form-control" placeholder="(XXX)XXX-XXXX" name="phone">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="email">Email Address:</label>
+          <input type="text" class="form-control" placeholder="email@email.com" name="email">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="birthday">Birthday:</label>
+          <input type="text" class="form-control" placeholder="Month 1, 2000" name="birthday">
+        </section>
+
+        <section class="form-group col-md-6">
+          <label for="sex">Gender:</label>
+          <div class="input-group mb-3">
+            <select class="custom-select" id="inputGroupSelect02">
+              <option selected>Gender</option>
+              <option value="1">male</option>
+              <option value="2">female</option>
+              <option value="3">non binary</option>
+            </select>
+            <div class="input-group-append">
+              <label class="input-group-text" for="inputGroupSelect02">Options</label>
+            </div>
+          </div>
+        </section>
+
       </div>
-    </header>
-
-
+      <div class="col-sm">
+        <section class="form-group col-md-6">
+          <label for="date">Date Met:</label>
+          <input type="text" class="form-control" placeholder="Month 1,2000" name="date">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="place">Place Met:</label>
+          <input type="text" class="form-control" placeholder="Location" name="place">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="note">Note:</label>
+          <input type="text" class="form-control" placeholder="Notes" name="note">
+        </section>
+      </div>
+      <div class="col-sm">
+        <button type="submit" class="btn btn-primary">Add Friend</button>
+      </div>
+    </div>
 
     <footer>
-      <a>&copy; Copyright 2018</a>
+      <% include headerfooter/footer %>
     </footer>
 
     <!-- Optional JavaScript -->
@@ -30,6 +156,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
   </body>
 </html>
