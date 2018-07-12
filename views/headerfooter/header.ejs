@@ -5,23 +5,40 @@
 <!-- CSS (load bootstrap from a CDN) -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <style>
-    body    { padding-top:50px; }
+  header {
+    overflow: hidden;
+    background-color: royalblue;
+    background: linear-gradient(to top, royalblue 0%, darkblue 100%);
+    padding: 10px 10px;
+    border-bottom: 3px solid black;
+  }
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+  }
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  .header-right {
+    float: right;
+  }
 </style>
 
-<nav class="navbar navbar-default" role="navigation">
-<div class="container-fluid">
-
-    <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-            <span class="glyphicon glyphicon glyphicon-tree-deciduous"></span>
-            Friend Ranker
-        </a>
-
-        <ul class="nav navbar-nav">
-            <li><a href="/">Assassins</a></li>
-            <li><a href="/about">Contracts</a></li>
-        </ul>
-    </div>
-
-</div>
-</nav>
+<header class="header">
+  <a class="logo" href="index.html">Friend Ranker</a>
+  <div class="header-right">
+    <a href="about.html">About</a>
+  </div>
+</header>

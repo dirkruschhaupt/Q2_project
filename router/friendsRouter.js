@@ -4,7 +4,7 @@ let express = require('express');
 let router = express.Router();
 let knex = require('../knex');
 
-router.get('/friends', function(req, res, next) {
+router.get('/friends', function(req, res) {
   knex('friends')
     .orderBy('id')
     .then((friends) => {

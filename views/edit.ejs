@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <% include headerfooter/header %>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,17 +13,34 @@
   </head>
   <body>
 
-    <header class="header">
-      <a class="logo" href="index.html">Friend Ranker</a>
-      <div class="header-right">
-        <a href="about.html">About</a>
+    <% for (let i = 0; i < data.length; i++) { %>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <p>Rank: <%= data[i].rank%></p>
+            <img src="<%= data[i].photo %>" alt="../images/nophoto.png" width="200px">
+          </div>
+          <div class="col-sm">
+            <p><%= data[i].name%></p>
+            <p><%= data[i].address%></p>
+            <p><%= data[i].city%>, <%= data[i].state%></p>
+            <p>Phone: <%= data[i].phone%></p>
+            <p>Email: <%= data[i].email%></p>
+            <p>Birthday: <%= data[i].birthday%></p>
+            <p>Gender: <%= data[i].sex%></p>
+          </div>
+          <div class="col-sm">
+            <p>Date Met: <%= data[i].date%></p>
+            <p>Place Met: <%= data[i].place%></p>
+            <p>Notes: <%= data[i].note%></p>
+          </div>
+        </div>
+        <hr>
       </div>
-    </header>
-
-
+    <% } %>
 
     <footer>
-      <a>&copy; Copyright 2018</a>
+      <% include headerfooter/footer %>
     </footer>
 
     <!-- Optional JavaScript -->
@@ -30,6 +48,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
   </body>
 </html>

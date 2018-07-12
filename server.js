@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('short'));
 
-console.log('hello');
+console.log('Love Me!');
 
 app.use(friendsRouter);
 app.use(groupsRouter);

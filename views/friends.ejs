@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -14,38 +13,36 @@
   </head>
   <body>
 
-    <header class="header">
-      <a class="logo" href="/public/index.html">Friend Ranker</a>
-      <div class="header-right">
-        <a href="/public/about.html">About</a>
-      </div>
-    </header>
-
     <% for (let i = 0; i < data.length; i++) { %>
-          <div class="column">
-            <div class="a">
-              <a>Rank: <%= data[i].rank%></a>
-              <!-- <img src= <%= data[i].photo%> > -->
-            </div>
-          <div class="b">
-            <a><%= data[i].name%></a>
-            <a><%= data[i].address%></a>
-            <a><%= data[i].city%>, <%= data[i].state%></a>
-            <a>Phone: <%= data[i].phone%></a>
-            <a>Email: <%= data[i].email%></a>
-            <a>Birthday: <%= data[i].birthday%></a>
-            <a>Gender: <%= data[i].sex%></a>
-          </div>
-          <div class="c">
-            <a>Date Met: <%= data[i].date%></a>
-            <a>Place Met: <%= data[i].place%></a>
-            <a>Notes: <%= data[i].note%></a>
-          </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <p>Rank: <%= data[i].rank%></p>
+            <img src="<%= data[i].photo %>" alt="../images/nophoto.png" width="200px">
+            <br><br>
+            <button type="button" class="btn btn-primary btn-lg">Edit</button>
+            <br><br>
+            <button type="button" class="btn btn-primary btn-lg">Delete</button>
 
-          <hr>
+          </div>
+          <div class="col-sm">
+            <p><%= data[i].name%></p>
+            <p><%= data[i].address%></p>
+            <p><%= data[i].city%>, <%= data[i].state%></p>
+            <p>Phone: <%= data[i].phone%></p>
+            <p>Email: <%= data[i].email%></p>
+            <p>Birthday: <%= data[i].birthday%></p>
+            <p>Gender: <%= data[i].sex%></p>
+          </div>
+          <div class="col-sm">
+            <p>Date Met: <%= data[i].date%></p>
+            <p>Place Met: <%= data[i].place%></p>
+            <p>Notes: <%= data[i].note%></p>
+          </div>
         </div>
-
-          <% } %>
+        <hr>
+      </div>
+    <% } %>
 
     <footer>
       <% include headerfooter/footer %>
@@ -56,8 +53,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/style.css">
   </body>
 </html>
-
-<% include headerfooter/footer %>

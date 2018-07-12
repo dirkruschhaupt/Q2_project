@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: red;
+  background: linear-gradient(to right, gray 10%, lightgray 50%);
+  background-size: 100% 100%;
+  font: normal 15px Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+header {
+ overflow: hidden;
+ background-color: royalblue;
+ background: linear-gradient(to top, royalblue 0%, darkblue 100%);
+ padding: 10px 10px;
+ border-bottom: 3px solid black;
+}
+
+.about {
+  margin: 10%;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.feed {
+  margin-left: 7%;
+  margin-right: 7%;
+  line-height: 1.6em;
+}
+
+.column {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.a {
+  width: 20%;
+}
+.b {
+  width: 35%;
+}
+.c {
+  width: 45%;
+}
+
+p {
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  margin: 3%;
+}
+
+h3 {
+  margin-left: 6%;
+}
+
+footer {
+  position: fixed;
+  border-top: 3px solid black;
+  background-color: royalblue;
+  background: linear-gradient(to bottom, royalblue 0%, darkblue 100%);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: left;
+  padding: 8px 50px 8px;
+  font-size: 12px;
+  margin-top: 20px;
+}
