@@ -9,35 +9,72 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <title>Friend Ranker</title>
+    <title>Friend Ranker: Edit</title>
   </head>
   <body>
 
-    <% for (let i = 0; i < data.length; i++) { %>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <p>Rank: <%= data[i].rank%></p>
-            <img src="<%= data[i].photo %>" alt="../images/nophoto.png" width="200px">
-          </div>
-          <div class="col-sm">
-            <p><%= data[i].name%></p>
-            <p><%= data[i].address%></p>
-            <p><%= data[i].city%>, <%= data[i].state%></p>
-            <p>Phone: <%= data[i].phone%></p>
-            <p>Email: <%= data[i].email%></p>
-            <p>Birthday: <%= data[i].birthday%></p>
-            <p>Gender: <%= data[i].sex%></p>
-          </div>
-          <div class="col-sm">
-            <p>Date Met: <%= data[i].date%></p>
-            <p>Place Met: <%= data[i].place%></p>
-            <p>Notes: <%= data[i].note%></p>
-          </div>
-        </div>
-        <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <section class="form-group col-md-6">
+          <label for="rank">Rank:</label>
+          <input type="text" class="form-control" placeholder="1-10" name="rank">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="photo">Photo URL:</label>
+          <input type="text" class="form-control" placeholder="Photo URL" name="photo">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" placeholder="Full Name" name="name">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="address">Street Address:</label>
+          <input type="text" class="form-control" placeholder="Address" name="address">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="city">City:</label>
+          <input type="text" class="form-control" placeholder="City" name="city">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="state">State:</label>
+          <input type="text" class="form-control" placeholder="State" name="state">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="phone">Phone Number:</label>
+          <input type="text" class="form-control" placeholder="(XXX)XXX-XXXX" name="phone">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="email">Email Address:</label>
+          <input type="text" class="form-control" placeholder="email@email.com" name="email">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="birthday">Birthday:</label>
+          <input type="text" class="form-control" placeholder="Month 1, 2000" name="birthday">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="sex">Sex:</label>
+          <input type="text" class="form-control" placeholder="Gender" name="sex">
+        </section>
       </div>
-    <% } %>
+      <div class="col-sm">
+        <section class="form-group col-md-6">
+          <label for="date">Date Met:</label>
+          <input type="text" class="form-control" placeholder="Month 1,2000" name="date">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="place">Place Met:</label>
+          <input type="text" class="form-control" placeholder="Location" name="place">
+        </section>
+        <section class="form-group col-md-6">
+          <label for="note">Note:</label>
+          <input type="text" class="form-control" placeholder="Notes" name="note">
+        </section>
+      </div>
+      <div class="col-sm">
+        <button type="submit" class="btn btn-primary">Add Friend</button>
+      </div>
+    </div>
 
     <footer>
       <% include headerfooter/footer %>
