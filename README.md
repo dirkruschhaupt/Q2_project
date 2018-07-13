@@ -13,7 +13,8 @@ Users will be able to click entered address and have it display on google maps
 Users will be able to enter notes on friends
 Users will be able to list all groups or clubs a friend is associated with
 
-
 Click link for mock ups
 
 ![mock up](/images/Friend%20Ranker.pdf)
+
+The project i would estimate to be 60% done. Many struggles came up trough the process of working on this project. A login page was made along with a working database. Working with bootsrtrap had many challenges that was not expected to the point I feel it would have been easier to build all the CSS myself. However the learning experience with bootstrap was the point of the assignment. Ejs proved to be the biggest hurdle in the project, getting the routes to work with the server was a fun challenge and learning experience. I wish we had a few extra days to work on this project to fully understand and figure out ejs to make this more of a fully functional program.    
