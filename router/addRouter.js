@@ -1,12 +1,15 @@
 'use strict';
 
 let router = require('express').Router();
+let env = process.env.NODE_ENV || 'development';
+let config = require('../knexfile')[env];
+let knex = require('knex')(config);
+
 //let config = require('../knexfile')[env];
 //let knex = require('knex')(config);
-
-let express = require('express');
+//let express = require('express');
 // let router = express.Router();
-let knex = require('../knex');
+//let knex = require('../knex');
 
 router.get('/add', (req, res) => {
   res.render('add', {title: 'Add Friend'}); //renders account ejs file
@@ -32,8 +35,8 @@ router.post('/add', (req, res, next) => {
         photo: req.body.photo
     }, '*')
 
-    .then(() => {
-        res.render('add');
+    .then((friends) => {
+        res.render('friends', {friends});
     })
 
     .catch((err) => {
