@@ -7,36 +7,10 @@ module.exports = {
     connection: 'postgres://localhost/friends'
   },
 
-  staging: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
-    migrations: {
-      tableName: 'knex_migrations'
-    }
-  },
+  
 
   production: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
-    migrations: {
-      tableName: 'knex_migrations'
-    }
+    client: 'pg',
+    connection: 'postgres://mcxvbgcgfafllf:7eee2c1ecf9e9cc17318fd65a8a26939549c1b7656c08003983d6d3897eb60b0@ec2-54-235-64-195.compute-1.amazonaws.com:5432/daseiccffbdeq2'
   }
-
 };
