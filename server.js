@@ -52,7 +52,7 @@ app.use((err, req, res, next) => {
   res.sendStatus(500);
 });
 
-app.listen(8000, function () {
+app.listen(process.env.PORT || 8000, function () {
   console.log('Listening on port 8000');
 });
 
