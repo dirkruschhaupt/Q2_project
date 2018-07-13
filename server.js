@@ -14,7 +14,7 @@ let knex = require('knex')(config);
 
 let friendsRouter = require('./router/friendsRouter');
 let groupsRouter = require('./router/groupsRouter');
-let addRouter = require('./router/addRouter');
+let add = require('./router/add');
 let editRouter = require('./router/editRouter');
 
 app.set('views', path.join(__dirname, 'views'));
@@ -31,7 +31,7 @@ app.use(morgan('short'));
 console.log('I Love You!');
 
 app.use(friendsRouter);
-app.use(addRouter);
+app.use(add);
 app.use(editRouter);
 app.use(groupsRouter);
 

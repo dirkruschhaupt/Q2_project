@@ -32,11 +32,11 @@ router.post('/add', (req, res, next) => {
         date: req.body.date,
         place: req.body.place,
         note: req.body.note,
-        photo: req.body.photo
+        photo: req.body.photo,
     }, '*')
 
     .then((friends) => {
-        res.render('friends', {friends});
+        res.render('index', {friends});
     })
 
     .catch((err) => {
