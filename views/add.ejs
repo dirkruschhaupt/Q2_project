@@ -14,6 +14,7 @@
   <body>
 
   <div class="container">
+    <form class="needs-validation" novalidate action="/addRouter" method="POST">
     <div class="row">
       <div class="col-sm">
         <section class="form-group col-md-6">
@@ -40,7 +41,7 @@
         <section class="form-group col-md-6">
           <label for="state">State:</label>
           <div class="input-group mb-3">
-            <select class="custom-select" id="inputGroupSelect02">
+            <select class="custom-select" id="inputGroupSelect02" name="state">
               <option selected>State</option>
               <option value="AL">AL</option>
               <option value="AK">AK</option>
